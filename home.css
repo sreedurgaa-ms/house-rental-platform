@@ -1,0 +1,117 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.particle-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 80%;
+}
+
+.container_id {
+    width: 85%;
+    padding: 10px;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    padding: 20px;
+    /* height: 100%; */
+    width: 100%;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.grid-item {
+    /* height: 250px; */
+    /* width: 400px; */
+    /* background-color: #e6e6e6; */
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    gap: 20px;
+}
+
+.img-class {
+    width: 50%;
+    display: flex;
+}
+
+.house-info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.sub-home-info {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: gray;
+    font-family: "Gurajada", sans-serif;
+}
+
+.house-info .sub-home-info p {
+    font-size: 14px;
+}
+
+.house-name {
+    font-size: 20px;
+    display: flex;
+    gap: 2px;
+    font-family: "Source Serif 4", serif;
+}
+
+.house-image {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.house-info h2 {
+    font-size: 24px;
+}
+
+.house-info p {
+    font-size: 18px;
+    display: flex;
+    gap: 8px;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+}
+
+.house-info p i {
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.button-class {
+    display: flex;
+    gap: 20px;
+}

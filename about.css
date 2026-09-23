@@ -1,0 +1,22 @@
+.container_id {
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_id h1 {
+    font-size: 48px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+    font-size: 20px;
+    margin-top: 3rem;
+}

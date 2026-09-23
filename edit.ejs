@@ -1,0 +1,45 @@
+<%- include('components/navbar') %>
+<!-- <%- include('components/particle') %> -->
+
+<head>
+    <link rel="stylesheet" href="/styles/edit.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+</head>
+
+<div class="container">
+    <form action="/edit/<%= user.id %>" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="image">Upload to change existing image</label>
+            <input type="file" id="image" name="image">
+        </div>
+        <div class="form-group">
+            <label for="house_name">House Name</label>
+            <input type="text" id="house_name" name="house_name" value="<%= user.house_name %>">
+        </div>
+        <div class="form-group">
+            <label for="place">Place</label>
+            <input type="text" id="place" name="place" value="<%= user.place %>">
+        </div>
+        <div class="form-group">
+            <label for="price">Price</label>
+            <input type="text" id="price" name="price" value="<%= user.price %>">
+        </div>
+        <div class="form-group">
+            <label for="sqft">Sqft</label>
+            <input type="number" id="sqft" name="sqft" value="<%= user.sqft %>">
+        </div>
+        <div class="form-group">
+            <label for="bedrooms">Bedrooms</label>
+            <input type="number" id="bedrooms" name="bedrooms" value="<%= user.bedrooms %>">
+        </div>
+        <div class="form-group">
+            <label for="rooms">Rooms</label>
+            <input type="number" id="rooms" name="rooms" value="<%= user.rooms %>">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" value="<%= user.phone %>">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
